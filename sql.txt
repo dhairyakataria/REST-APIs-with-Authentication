@@ -1,0 +1,11 @@
+
+drop table user;
+CREATE TABLE USER(
+	ID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    USERNAME VARCHAR(30) NOT NULL,
+    EMAIL VARCHAR(30) NOT NULL,
+    U_PASSWORD VARCHAR(64) NOT NULL,
+    U_ROLE VARCHAR(10)
+);
+
+INSERT INTO USER (USERNAME, EMAIL, U_PASSWORD, U_ROLE) VALUE("abc","abc@gmail.com","abc123","admin"), ("xyz","xyz@gmail.com","xyz123","user");
